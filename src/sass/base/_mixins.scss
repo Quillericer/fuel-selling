@@ -8,6 +8,11 @@
     line-height: 16px;
     text-align: center;
     border: none;
+    &:hover {
+        color: $main-color;
+        background: #FFFFFF;
+        transition: 0.3s;
+    }
 }
 
 

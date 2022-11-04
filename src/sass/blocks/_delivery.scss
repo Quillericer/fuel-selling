@@ -1,0 +1,81 @@
+.delivery {
+    min-height: 197px;
+    &__title {
+        margin-top: 90px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+    }
+    &__form {
+        margin-top: 48px;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        min-height: 289px;
+        padding-top: 49px;
+        padding-left: 96px;
+        &-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            span {
+                color: $main-color;
+            }
+        }
+        &-button {
+            @include button;
+        }
+        &-inputs {
+            display: flex;
+            margin-top: 30px;
+            align-items: flex-end;
+            label {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+            }
+            input {
+                background: #FFFFFF;
+                border: 1px solid #D5D5D5;
+                height: 46px;
+                padding: 15px;
+            }
+        }
+        &-name {
+            display: flex;
+            flex-direction: column;
+            margin-right: 14px;
+        }
+        &-number {
+            display: flex;
+            flex-direction: column;
+            margin-right: 14px;
+        }
+        &-data {
+            margin-top: 34px;
+            display: flex;
+            span {
+                font-weight: 600px;
+                color: $main-color;
+                transition: 0.3s;
+                cursor: pointer;
+                &:hover {
+                    color: $second-color;
+                }
+            }
+        }
+        &-checkbox {
+            margin-right: 16px;
+        }
+        &-condition {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: #000000;
+                cursor: default;
+            }
+        }
+    }
+}

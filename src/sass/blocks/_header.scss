@@ -1,0 +1,50 @@
+.header {
+    margin-top: 8px;
+    min-height: 78px;
+    &__wrapper {
+        display: flex;
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        margin-left: 326px;
+        &-number {
+            margin-left: 14px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000;
+        }
+    }
+    &__button {
+        &-contact {
+            @include button;
+            width: 176px;
+            margin-left: 35px;
+        }
+        &-personal {
+            @include button;
+            width: 176px;
+            display: flex;
+            padding: 14px;
+            div {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.header__button-personal:hover .header__button-img {
+    filter: invert(44%) sepia(75%) saturate(4118%) hue-rotate(175deg) brightness(96%) contrast(93%);
+}
+
+.header__phone:hover .header__phone-icon {
+    filter: invert(44%) sepia(75%) saturate(4118%) hue-rotate(175deg) brightness(96%) contrast(93%);
+}
+
+.header__phone:hover .header__phone-number {
+    color: $main-color;
+    background: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+}

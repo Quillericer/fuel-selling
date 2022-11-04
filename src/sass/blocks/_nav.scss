@@ -1,0 +1,32 @@
+.nav {
+    min-height: 60px;
+    background: #F9F9F9;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 21px;
+        padding-left: 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        padding-right: 40px;
+        list-style: none;
+        cursor: pointer;
+        img {
+            margin-left: 10px;
+        }
+        &:hover {
+            color: $main-color;
+            transition: 0.3s;
+        }
+    }
+}
+
+.nav__item:hover img {
+    filter: invert(44%) sepia(75%) saturate(4118%) hue-rotate(175deg) brightness(96%) contrast(93%);
+}
