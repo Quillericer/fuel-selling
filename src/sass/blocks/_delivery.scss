@@ -1,81 +1,82 @@
 .delivery {
-    min-height: 197px;
+    min-height: 666px;
+    background: #F9F9F9;
+    margin-top: 100px;
     &__title {
-        margin-top: 90px;
+        padding-top: 74px;
         font-weight: 700;
-        font-size: 48px;
-        line-height: 59px;
+        font-size: 36px;
+        line-height: 44px;
     }
-    &__form {
-        margin-top: 48px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        &_all {
+            display: flex;
+        }
+    }
+    &__label {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    &__input {
+        height: 46px;
+        width: 409px;
+        padding-left: 15px;
+        background: #FFFFFF;
+        border: 1px solid #D5D5D5;
+    }
+    &__result {
+        width: 638px;
+        height: 441px;
+        background: #FFFFFF;
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-        min-height: 289px;
-        padding-top: 49px;
-        padding-left: 96px;
+        margin-top: 15px;
+        padding: 40px;
+        margin-left: 71px;
+        hr {
+            border: 1px solid #E7E7E7;
+            margin-top: 16px;
+        }
         &-title {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 44px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &-price {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+            &_liter {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+            }
+        }
+        &-descr {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #565656;
+            margin-top: 10px;
+        }
+        &-benefit {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
             span {
-                color: $main-color;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: right;
+                color: #000000;
             }
         }
         &-button {
             @include button;
-        }
-        &-inputs {
-            display: flex;
-            margin-top: 30px;
-            align-items: flex-end;
-            label {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 15px;
-            }
-            input {
-                background: #FFFFFF;
-                border: 1px solid #D5D5D5;
-                height: 46px;
-                padding: 15px;
-            }
-        }
-        &-name {
-            display: flex;
-            flex-direction: column;
-            margin-right: 14px;
-        }
-        &-number {
-            display: flex;
-            flex-direction: column;
-            margin-right: 14px;
-        }
-        &-data {
-            margin-top: 34px;
-            display: flex;
-            span {
-                font-weight: 600px;
-                color: $main-color;
-                transition: 0.3s;
-                cursor: pointer;
-                &:hover {
-                    color: $second-color;
-                }
-            }
-        }
-        &-checkbox {
-            margin-right: 16px;
-        }
-        &-condition {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            color: #000000;
-            text-decoration: none;
-            &:hover {
-                text-decoration: none;
-                color: #000000;
-                cursor: default;
-            }
+            margin-top: 31px;
         }
     }
 }

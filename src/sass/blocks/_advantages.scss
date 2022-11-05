@@ -1,0 +1,36 @@
+.advantages {
+    min-height: 550px;
+    background: #F9F9F9;
+    margin-top: 100px;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        padding-top: 80px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 353px);
+        grid-template-rows: repeat(2, 138px);
+        gap: 30px;
+        margin-top: 48px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 65px auto;
+        padding: 20px;
+        background: #FFFFFF;
+        &-title {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        &-descr {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #565656;
+            margin-top: 14px;
+        }
+    }
+}

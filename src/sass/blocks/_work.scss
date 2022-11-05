@@ -1,0 +1,59 @@
+.work {
+    &__title {
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    &__wrapper {
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(3, 353px);
+        grid-template-rows: 394px;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__item {
+        background: $second-color;
+        padding: 30px;
+    }
+    &__time {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: right;
+        color: #FFFFFF;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    &__item {
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        top: 65px;
+        right: 30px;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-top: 24px;
+    }
+    &__ps {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-top: 24px;
+    }
+}
