@@ -1,0 +1,61 @@
+.reviews {
+    min-height: 722px;
+    background: #F9F9F9;
+    margin-top: 100px;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        padding-top: 86px;
+    }
+    &__button {
+        @include button;
+        margin: 58px auto;
+        display: block;
+    }
+}
+
+.review {
+    &__wrapper {
+        display: flex;
+        overflow: hidden;
+        column-gap: 30px;
+        margin-top: 54px;
+    }
+    &__item {
+        background: #FFFFFF;
+        min-width: 545px;
+        min-height: 368px;
+        padding: 40px;
+        &-name {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        &-job {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #565656;
+        }
+        &-text {
+            font-weight: 400;
+            margin-top: 40px;
+            font-size: 16px;
+            line-height: 140%;
+        }
+        &-more {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: $main-color;
+            margin-top: 77px;
+            cursor: pointer;
+            &:hover {
+                color: $second-color;
+                transition: 0.3s;
+            }
+        }
+    }
+}

@@ -11,6 +11,7 @@
 .container {
     width: 1120px;
     margin: 0 auto;
+    position: relative;
 }
 
 @import "./blocks/header";
@@ -20,3 +21,7 @@
 @import "./blocks/delivery";
 @import "./blocks/work";
 @import "./blocks/advantages";
+@import "./blocks/certificates";
+@import './blocks/slider';
+@import "./blocks/partners";
+@import "./blocks/reviews";

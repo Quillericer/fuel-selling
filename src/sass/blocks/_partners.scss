@@ -1,0 +1,26 @@
+.partners {
+    hr {
+        border: 1px solid #E7E7E7;
+        margin-top: 56px;
+    }
+    margin-top: 100px;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.round {
+    width: 8px;
+    height: 8px;
+    background: $main-color;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 46px;
+}

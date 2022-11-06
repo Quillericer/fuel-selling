@@ -1,0 +1,42 @@
+.arrow {
+    &__wrapper {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        &_review {
+            display: flex;
+            gap: 15px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 86px;
+        }
+    }
+    &_left {
+        cursor: pointer;
+        border: 1px solid #D5D5D5;
+        display: inline-block;
+        height: 45px;
+        width: 45px;
+        img {
+            transform: rotate(90deg);
+            padding-left: 17px;
+            padding-bottom: 15px;
+        }
+    }
+    &_right {
+        cursor: pointer;
+        border: 1px solid #D5D5D5;
+        display: inline-block;
+        height: 45px;
+        width: 45px;
+        img {
+            transform: rotate(-90deg);
+            padding-right: 17px;
+            padding-top: 15px;
+        }
+    }
+}
+

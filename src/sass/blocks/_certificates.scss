@@ -1,0 +1,22 @@
+.certificates {
+    margin-top: 100px;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+    }
+    &-list {
+        overflow: hidden;
+        margin-top: 48px;
+        display: flex;
+        column-gap: 31px;
+        &__certificate {
+            padding: 28px 20px 28px 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+            min-width: 257px;
+            width: 257px;
+            height: 357px;
+        }
+    }
+}
