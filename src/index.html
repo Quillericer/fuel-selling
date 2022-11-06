@@ -57,11 +57,11 @@
                 <div class="delivery-fast__form-inputs">
                     <div class="delivery-fast__form-name">
                         <label for="name">Ваше имя</label>
-                        <input type="text" id="name" placeholder="Иван">
+                        <input type="text" id="name" placeholder="Иван" required>
                     </div>
                     <div class="delivery-fast__form-number">
                         <label for="phone">Номер телефона</label>
-                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
                     </div>
                     <button class="delivery-fast__form-button">Заказать топливо</button>
                 </div>
@@ -179,23 +179,23 @@
                 <div class="delivery__inputs">
                     <div class="delivery__wrapper">
                         <label for="sort" class="delivery__label">Вид топлива</label>
-                        <input type="text" id="sort" placeholder="Укажите вид топлива" class="delivery__input">
+                        <input type="text" id="sort" placeholder="Укажите вид топлива" class="delivery__input" required>
                     </div>
                     <div class="delivery__wrapper">
                         <label for="amount" class="delivery__label">Объем топлива</label>
-                        <input type="number" id="amount" placeholder="Значение в литрах от 5 до 500" class="delivery__input" min="5" max="500">
+                        <input type="number" id="amount" placeholder="Значение в литрах от 5 до 500" class="delivery__input" min="5" max="500" required>
                     </div>
                     <div class="delivery__wrapper">
                         <label for="sort" class="delivery__label">Место доставки</label>
-                        <input type="text" id="sort" placeholder="Укажите место" class="delivery__input">
+                        <input type="text" id="sort" placeholder="Укажите место" class="delivery__input" required>
                     </div>
                     <div class="delivery__wrapper">
                         <label for="name" class="delivery__label">Ваше имя</label>
-                        <input type="text" id="name" placeholder="Иван" class="delivery__input">
+                        <input type="text" id="name" placeholder="Иван" class="delivery__input" required>
                     </div>
                     <div class="delivery__wrapper">
                         <label for="phone" class="delivery__label">Номер телефона</label>
-                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" class="delivery__input">
+                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" class="delivery__input" required>
                     </div>
                 </div>
                 <div class="delivery__result">
@@ -354,16 +354,16 @@
             <div class="partners__title">Наши партнеры</div>
             <div class="partners__wrapper">
                 <div class="partners__item">
-                    <img src="./img/partners/lukoil.png" alt="lukoil">
+                    <img src="./img/partners/lukoil.png" alt="lukoil" loading="lazy">
                 </div>
                 <div class="partners__item">
-                    <img src="./img/partners/gazprom.png" alt="gazprom">
+                    <img src="./img/partners/gazprom.png" alt="gazprom" loading="lazy">
                 </div>
                 <div class="partners__item">
-                    <img src="./img/partners/rosneft.png" alt="rosneft">
+                    <img src="./img/partners/rosneft.png" alt="rosneft" loading="lazy">
                 </div>
                 <div class="partners__item">
-                    <img src="./img/partners/tatneft.png" alt="tatneft">
+                    <img src="./img/partners/tatneft.png" alt="tatneft" loading="lazy">
                 </div>
             </div>
             <hr>
@@ -414,6 +414,49 @@
             <button class="reviews__button">Читать все отзывы</button>
         </div>
     </section>
+
+    <form class="questions">
+        <div class="container">
+            <h2 class="questions__title">Остались вопросы?</h2>
+            <div class="questions__descr">
+                Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы свяжемся с вами в ближайшее время
+            </div>
+            <div class="questions__wrapper">
+                <input class="questions__input" type="text" placeholder="Ваше имя" required>
+                <input class="questions__input" type="tel" placeholder="Номер телефона" required>
+                <button class="questions__button">Перезвоните мне</button>
+            </div>
+            <div class="questions__confidential">
+                Нажимая на кнопку «Перезвоните мне» я соглашаюсь с <a href="./policy.html">политикой конфиденциальности</a>
+            </div>
+            
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <img src="./img/header/logo.png" alt="logo">
+                    <div class="logo__descr">ⓒ 2019 ООО "Процессинг 24"</div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-menu">Карта АЗС</div>
+                    <div class="footer__item-menu">АЗС по регионам</div>
+                    <div class="footer__item-menu">АЗС по брендам</div>
+                    <div class="footer__item-menu">Доставка топлива</div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-menu">Контакты</div>
+                    <div class="footer__item-menu">О компании</div>
+                    <div class="footer__item-menu">Личный кабинет</div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-text">Отдел продаж</div>
+                    <a class="footer__item-number" href="tel:+74951278170">8 (495) 127-81-70</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

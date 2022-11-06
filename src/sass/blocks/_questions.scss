@@ -1,0 +1,56 @@
+.questions {
+    min-height: 450px;
+    background: $second-color;
+    margin-top: 80px;
+    &__title {
+        padding-top: 100px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFF;
+        text-align: center;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 44px;
+        color: #FFF;
+        margin-top: 24px;
+        text-align: center;
+    }
+    &__input {
+        background: #FFFFFF;
+        border: 1px solid #D5D5D5;
+        height: 46px;
+        width: 400px;
+        padding: 15px;
+    }
+    &__button {
+        @include button;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+    &__confidential {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 44px;
+        color: #FFF;
+        margin-top: 24px;
+        text-align: center;
+        a {
+            text-decoration: underline;
+            cursor: pointer;
+            color: #FFF;
+            &:hover {
+                color: #FFF;
+            }
+        }
+        &:hover {
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+}
