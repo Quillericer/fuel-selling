@@ -1,0 +1,251 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+    .header {
+        &__phone {
+            margin-left: 205px;
+        }
+    }
+    .price {
+        &__dt {
+            grid-template-columns: 177px 226px 596px;
+        }
+        &__ai {
+            grid-template-columns: 177px 226px 596px;
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(3,313px);
+            grid-template-rows: 420px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(2,484px);
+            grid-template-rows: repeat(3,138px);
+        }
+    }
+    .certificates-list {
+        column-gap: 115px;
+    }
+    .review {
+        &__item {
+            min-width: 485px;
+        }
+    }
+    .questions {
+        &__input {
+            width: 340px;
+        }
+    }
+}
+
+
+@media (max-width: 1120px) {
+    .container {
+        width: 960px;
+    }
+    .header {
+        &__phone {
+            margin-left: 166px;
+        }
+    }
+    .price {
+        &__dt {
+            grid-template-columns: 166px 217px 575px;
+        }
+        &__ai {
+            grid-template-columns: 166px 217px 575px;
+        }
+        &__sort {
+            padding-left: 35px;
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(3,300px);
+            grid-template-rows: 435px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(2,464px);
+            grid-template-rows: repeat(3, 138px);
+        }
+    }
+    .certificates-list {
+        column-gap: 95px;
+    }
+    .review {
+        &__item {
+            min-width: 465px;
+        }
+    }
+    .questions {
+        &__input {
+            width: 275px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        width: 760px;
+    }
+    .header {
+        &__logo {
+            display: none;
+        }
+        &__phone {
+            margin-left: 120px;
+            &-number {
+                font-size: 15px;
+            }
+        }
+    }
+    .nav {
+        &__item {
+            font-size: 12px;
+            padding-right: 0;
+            img {
+                display: none;
+            }
+        }
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+    .delivery {
+        &-fast {
+            &__title {
+                font-size: 45px;
+            }
+            &__form {
+                padding-left: 0;
+                min-height: 350px;
+                label {
+                    display: none;
+                }
+                &-title {
+                    text-align: center;
+                }
+                &-inputs {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+                &-data {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .price {
+        &__dt {
+            grid-template-columns: 105px 192px 464px;
+        }
+        &__ai {
+            grid-template-columns: 105px 192px 464px;
+        }
+        &__sort {
+            padding-left: 0;
+            text-align: center;
+        }
+        &__spot {
+            margin-left: 200px;
+        }
+        &__no-spot {
+            margin-left: 345px;
+        }
+    }
+    .delivery {
+        padding-bottom: 40px;
+        &__title {
+            text-align: center;
+        }
+        &__wrapper_all {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__result {
+            margin-top: 30px;
+        }
+    }
+    .work {
+        &__title {
+            text-align: center;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(2,279px);
+            grid-template-rows: repeat(2, 400px);
+            justify-content: center;
+        }
+        &__ps {
+            display: none;
+        }
+    }
+    .advantages {
+        &__title {
+            text-align: center;
+        }
+        &__wrapper {
+            grid-template-columns: 435px;
+            grid-template-rows: repeat(6, 138px);
+            justify-content: center;
+        }
+    }
+    .certificates-list {
+        column-gap: 246px;
+    }
+    .partners {
+        &__title {
+            text-align: center;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+    }
+    .review {
+        &__wrapper {
+            column-gap: 325px;
+        }
+        &__item {
+            min-width: 760px;
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+    .reviews {
+        &__title {
+            text-align: center;
+        }
+    }
+    .questions {
+        &__descr {
+            line-height: unset;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            justify-content: space-around;
+            :first-child {
+                display: none;
+            }
+        }
+        
+        
+    }
+}

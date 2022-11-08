@@ -4,6 +4,9 @@
     &__wrapper {
         display: flex;
     }
+    &__logo {
+        object-fit: contain;
+    }
     &__phone {
         display: flex;
         align-items: center;

@@ -27,6 +27,7 @@
         min-width: 545px;
         min-height: 368px;
         padding: 40px;
+        position: relative;
         &-name {
             font-weight: 600;
             font-size: 15px;
@@ -52,6 +53,8 @@
             color: $main-color;
             margin-top: 77px;
             cursor: pointer;
+            position: absolute;
+            bottom: 40px;
             &:hover {
                 color: $second-color;
                 transition: 0.3s;
