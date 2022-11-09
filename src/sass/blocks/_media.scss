@@ -91,6 +91,9 @@
 }
 
 @media (max-width: 960px) {
+    h2 {
+        text-align: center;
+    }
     .container {
         width: 760px;
     }
@@ -121,6 +124,7 @@
         &-fast {
             &__title {
                 font-size: 45px;
+                text-align: center;
             }
             &__form {
                 padding-left: 0;
@@ -173,6 +177,7 @@
         }
         &__result {
             margin-top: 30px;
+            margin-left: 0;
         }
     }
     .work {
@@ -247,5 +252,100 @@
         }
         
         
+    }
+    .certificates {
+        &__title {
+            text-align: unset;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 30px !important;
+    }
+    .container {
+        width: 550px;
+    }
+    .header {
+        &__phone {
+            margin-left: 0;
+        }
+    }
+    .nav {
+        &__wrapper {
+            justify-content: space-between;
+        }
+    }
+    .price {
+        &__category {
+            font-size: 10px;
+        }
+        &__dt {
+            grid-template-columns: 82px 109px 358px;
+        }
+        &__spot {
+            margin-left: 155px;
+        }
+        &__no-spot {
+            margin-left: 260px;
+        }
+        &__ai {
+            grid-template-columns: 82px 109px 358px;
+        }
+        &__sort {
+            font-size: 18px;
+        }
+    }
+    .delivery {
+        &__result {
+            margin-left: 0;
+            width: 530px;
+        }
+    }
+    .work {
+        &__wrapper {
+            grid-template-columns: 279px;
+            grid-template-rows: repeat(3, 400px);
+        }
+    }
+    .arrow {
+        &__wrapper {
+            right: 50%;
+            transform: translateX(50%);
+            top: 45px;
+        }
+    }
+    .certificates {
+        &-list {
+            margin-top: 70px;
+            column-gap: 293px;
+            &__certificate {
+                transform: translateX(56%);
+            }
+        }
+    }
+    .review {
+        &__item {
+            min-width: 550px;
+        }
+    }
+    .questions {
+        &__confidential {
+            font-size: 10px;
+        }
+    }
+    .footer {
+        &__item {
+            &-menu {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
     }
 }
