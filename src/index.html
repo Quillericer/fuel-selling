@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Тестовое">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.min.css" defer>
+    <noscript class="loadLater">
+        <link rel="stylesheet" href="./css/index.min.css">
+    </noscript>
     <title>Fuel</title>
 </head>
 <body>
@@ -467,7 +469,16 @@
     </footer>
 
 
-
+    <script type="application/javascript">
+        // Загрузить содержимое <noscript class="loadLater"></noscript>  после загрузки страницы
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var loadLater = document.querySelector('.loadLater');
+            var head = document.querySelector('head');
+            if(loadLater && head){
+                head.insertAdjacentHTML('beforeend', loadLater.innerHTML);
+            }
+        });
+    </script>
     <script src="./js/index.js" defer></script>
 </body>
 </html>
