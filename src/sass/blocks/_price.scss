@@ -1,5 +1,17 @@
 .price {
     margin-top: 100px;
+    &_576px {
+        display: none;
+        text-align: center;
+        &-number {
+            color: $main-color;
+            font-weight: 600;
+            &:hover {
+                color: $second-color;
+                text-decoration: none;
+            }
+        }
+    }
     &__title {
         font-weight: 700;
         font-size: 36px;

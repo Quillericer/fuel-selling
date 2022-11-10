@@ -20,6 +20,14 @@
         img {
             margin-left: 10px;
         }
+        a {
+            color: #000000;
+            &:hover {
+                color: $main-color;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+        }
         &:hover {
             color: $main-color;
             transition: 0.3s;

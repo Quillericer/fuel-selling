@@ -4,6 +4,10 @@
 @import "./base/variables";
 @import "./base/mixins";
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
 }

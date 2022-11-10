@@ -28,26 +28,26 @@
     <nav class="nav">
         <div class="container">
             <ul class="nav__wrapper">
-                <li class="nav__item">Доставка топлива</li>
+                <li class="nav__item"><a href="#delivery">Доставка топлива</a></li>
                 <li class="nav__item">
-                    <div>Топливные карты</div>
+                    <a href="#">Топливные карты</a>
                     <img src="./icons/jackdaw.svg" alt="jackdaw" loading="lazy">
                 </li>
                 <li class="nav__item">
-                    <div>АЗС</div>
+                    <a href="#">АЗС</a>
                     <img src="./icons/jackdaw.svg" alt="jackdaw" loading="lazy">
                 </li>
-                <li class="nav__item">Цены на топливо</li>
+                <li class="nav__item"><a href="#price">Цены на топливо</a></li>
                 <li class="nav__item">
-                    <div>О компании</div>
+                    <a href="#about">О компании</a>
                     <img src="./icons/jackdaw.svg" alt="jackdaw" loading="lazy">
                 </li>
-                <li class="nav__item">Контакты</li>
+                <li class="nav__item"><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="delivery-fast">
+    <section class="delivery-fast" id="fast">
         <div class="container">
             <h1 class="delivery-fast__title">
                 Доставка топлива
@@ -77,7 +77,7 @@
         
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <h2 class="price__title">Стоимость топлива</h2>
             <div class="price__categories">
@@ -119,6 +119,10 @@
                         <div class="price__spot">41.16 р.</div>
                         <div class="price__no-spot">40.67 р.</div>
                     </div>
+                </div>
+            </div>
+            <div class="price_576px">
+                Для обсуждения подробностей и стоимости топлива, позвоните на номер <a class="price_576px-number" href="tel:+74951278280">8 (495) 127-82-80</a>
             </div>
             <div class="price__ai">
                 <div class="price__sort">АИ-95</div>
@@ -172,7 +176,7 @@
         </div>
     </section>
 
-    <form class="delivery">
+    <form class="delivery" id="delivery">
         <div class="container">
             <h2 class="delivery__title">Топливо с доставкой</h2>
             <div class="delivery__wrapper_all">
@@ -229,7 +233,7 @@
         </div>
     </form>
 
-    <section class="work">
+    <section class="work" id="about">
         <div class="container">
             <h2 class="work__title">Как мы работаем</h2>
             <div class="work__wrapper">
@@ -433,7 +437,7 @@
             
         </div>
     </form>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__item">
