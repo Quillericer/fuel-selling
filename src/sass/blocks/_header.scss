@@ -18,6 +18,10 @@
             line-height: 22px;
             color: #000;
         }
+        &-icon {
+            width: 16px;
+            height: 16px;
+        }
     }
     &__button {
         &-contact {
@@ -33,6 +37,10 @@
             div {
                 padding-left: 10px;
             }
+        }
+        &-img {
+            height: 16px;
+            width: 16px;
         }
     }
 }
