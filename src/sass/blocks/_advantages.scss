@@ -21,6 +21,10 @@
         grid-template-columns: 65px auto;
         padding: 20px;
         background: #FFFFFF;
+        img {
+            width: 48px;
+            height: 48px;
+        }
         &-title {
             font-weight: 600;
             font-size: 15px;
