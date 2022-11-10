@@ -237,3 +237,29 @@ const reviewSlider = new Slider(
   document.querySelector(".review__button-next"),
   document.querySelector(".review__button-prev")
 );
+
+const hamburger = document.querySelector(".hamburger"),
+  menu = document.querySelector(".menu"),
+  closeElem = document.querySelector(".menu__close"),
+  menuOverlay = document.querySelector(".menu__overlay");
+
+hamburger.addEventListener("click", showHamburger);
+closeElem.addEventListener("click", hideHamburger);
+
+function showHamburger() {
+  menu.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function hideHamburger() {
+  menu.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+menuOverlay.addEventListener("click", hideHamburger);
+
+document.addEventListener("keydown", e => {
+  if (e.code === "Escape" || menu.classList.contains("active")) {
+    hideHamburger();
+  }
+});
